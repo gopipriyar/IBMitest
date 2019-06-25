@@ -1,15 +1,14 @@
 000001190102      *
 000002190102      * Compile time array demo - Data is loaded when program is created
 000003190102      *
-000004190625      * Comment added before commit and push to GITHUB
-000005190102     FEXDSPF04  CF   E             workstn
-000006190102      *
-000007190102      *   montharray        ---->    Array name
-000008190102      *   10                ---->    array element length
-000009190102      *   dim               ---->    size of the array
-000010190102      *   ctdata()          ---->    Compile time array
-000011190102      *   perrcd            ---->    Number of entries in one array record
-000012190102      *
+000004190102     FEXDSPF04  CF   E             workstn
+000005190102      *
+000006190102      *   montharray        ---->    Array name
+000007190102      *   10                ---->    array element length
+000008190102      *   dim               ---->    size of the array
+000009190102      *   ctdata()          ---->    Compile time array
+000010190102      *   perrcd            ---->    Number of entries in one array record
+000011190102      *
 000100190102     dmontharray       S             10    dim(12) ctdata perrcd(1)
 000101190102      *
 000102190102     c     *IN03         DOWEQ     *OFF
