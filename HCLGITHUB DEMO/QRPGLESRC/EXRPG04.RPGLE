@@ -1,7 +1,7 @@
 000001190102      *
 000002190102      * Compile time array demo - Data is loaded when program is created
-000003190625      * Code modified after initial download in GIT local workspace
-000004190102      *
+000003190102      *
+000004190625      * Comment added before commit and push to GITHUB
 000005190102     FEXDSPF04  CF   E             workstn
 000006190102      *
 000007190102      *   montharray        ---->    Array name
