@@ -1,0 +1,44 @@
+000010190103     A*%%TS  SD  20190103  133212  A40144471   REL-V7R1M0  5770-WDS
+000020190103     A*%%EC
+000030190103     A                                      DSPSIZ(24 80 *DS3)
+000040190102     A          R DAYINP
+000041190625      * Initial source modified before pushing the source ti GITHUB
+000050190102     A*%%TS  SD  20190102  144748  A40144471   REL-V7R1M0  5770-WDS
+000060190102     A                                      CA03(03 'Exit')
+000070190102     A                                  1  3DATE
+000080190102     A                                      EDTCDE(Y)
+000090190102     A                                  2  3TIME
+000100190102     A                                  1 31'Retrieve Month Name'
+000110190102     A                                      COLOR(WHT)
+000120190102     A                                  1 70USER
+000130190102     A                                  6 19'Enter Month number  :'
+000140190102     A                                      COLOR(BLU)
+000150190102     A            #DAY           2S 0B  6 43
+000160190102     A                                 23  6'F3=Exit'
+000170190102     A                                  7 27'(01-12)'
+000180190102     A                                  9 19'Month Name         :'
+000190190102     A                                      COLOR(BLU)
+000200190102     A            #MONTH        10A  O  9 43
+000210190102     A            ERRMSG        35   O 22  6COLOR(RED)
+000220190102     A                                      DSPATR(HI)
+000230190103     A          R STATEAB
+000240190103     A*%%TS  SD  20190103  133212  A40144471   REL-V7R1M0  5770-WDS
+000250190103     A                                      CA03(03 'F3=Exit')
+000260190103     A                                  1  4DATE
+000270190103     A                                      EDTCDE(Y)
+000280190103     A                                  2  4TIME
+000290190103     A                                  1 34'Validate State'
+000300190103     A                                      COLOR(WHT)
+000310190103     A                                  1 70USER
+000320190103     A                                  6 19'Enter State :'
+000330190103     A                                      COLOR(BLU)
+000340190103     A            #STATE         2A  B  6 35
+000350190103     A  81                                  COLOR(RED)
+000360190103     A  81                                  DSPATR(RI)
+000370190103     A  81                                  DSPATR(BL)
+000380190103     A                                  7 19'Valid       :'
+000390190103     A                                      COLOR(BLU)
+000400190103     A            #FLAG          1A  B  7 35
+000410190103     A            ERRMSG        35A  O 22  7COLOR(RED)
+000420190103     A                                 23  7'F3=Exit'
+000430190103     A            #STDET        20   O  6 39
