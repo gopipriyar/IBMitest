@@ -1,0 +1,25 @@
+000010181220     A*%%TS  SD  20181220  163713  A40144471   REL-V7R1M0  5770-WDS
+000020181220     A*%%EC
+000030181220     A                                      DSPSIZ(24 80 *DS3)
+000040181220     A          R EXNUM01
+000050181220     A*%%TS  SD  20181220  163713  A40144471   REL-V7R1M0  5770-WDS
+000060181220     A                                      CA03(03 'Exit')
+000070181220     A                                      OVERLAY
+000080181220     A                                  1  2DATE
+000090181220     A                                      EDTCDE(Y)
+000100181220     A                                  1 70USER
+000110181220     A                                  2  2TIME
+000120181220     A                                  1 26'Arithmetic Operations'
+000130181220     A                                      DSPATR(UL)
+000140181220     A                                      COLOR(TRQ)
+000150181220     A                                  5 16'Enter the First number   :'
+000160181220     A                                  6 16'Enter the Operator       :'
+000170181220     A                                  7 16'Enter the second number  :'
+000180181220     A                                  9 16'Result                   :'
+000190181220     A            OPR            1A  I  6 45PUTRETAIN
+000200181220     A            NUM2           5S 2I  7 45PUTRETAIN
+000210181220     A            NUM1           5S 2I  5 45PUTRETAIN
+000220181220     A                                      CHECK(RB)
+000230181220     A            RESULT         8Y 2O  9 45EDTCDE(J)
+000240181220     A                                 22  3'F3=Exit'
+000250181220     A            ERRMSG        70   O 23  3DSPATR(HI)
