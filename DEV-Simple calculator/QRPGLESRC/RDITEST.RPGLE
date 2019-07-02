@@ -1,6 +1,6 @@
 000100181220     FEXDSPF01  CF   E             workstn
 000101190627      * RDI Conectivity Testing for GIT    Demo
-000102190628      * Source modified in RDI and newly added to Git - Calculator
+000102190702      * Source modified in RDI and newly added to Git - Calculator.
 000103181220     dreturnpt         s              6a   INZ(*BLANKS)
 000104181220     dPSDS            SDS
 000105181220     dErr_msg            *STATUS
